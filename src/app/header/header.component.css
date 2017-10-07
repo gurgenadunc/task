@@ -1,0 +1,33 @@
+.panel {
+    height: 100px;
+    background: grey;
+    width: 100%;
+}
+
+.panel p {
+    margin: 0;
+    padding: 8px;
+}
+
+.btn {
+    border-radius: 5px;
+    padding: 10px 17px;
+    font-size: 16px;
+    text-decoration: none;
+    margin: 10px 0 0 10px;;
+    color: #fff;
+    display: inline-block;
+    background-color: #55acee;
+    border: none;
+    cursor: pointer;
+    transition: transform .3s ease-in-out;
+  }
+  
+  .btn:active {
+    transform: scale(1.4);
+  }
+
+
+  .btn:hover {
+    background-color: #6FC6FF;
+  }

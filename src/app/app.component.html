@@ -1,0 +1,20 @@
+<app-header 
+    (hideComponentOne)="componetOneHide()"  
+    (hideComponentThree)="componetThreeHide()">
+</app-header>
+
+<div class="component-container">
+    <app-component1 
+        class="component1" [ngStyle]="{ 'width': componentOneWidth }"  
+        (sendInputText)="sharedTextChanged($event)" 
+        [inputText]="componentTwoText">
+    </app-component1> 
+
+    <app-component2 
+        class="component2" [sharedText]="componentTwoText" (cleanInputText)="resetInput()" 
+        [ngStyle]="{ 'background' : componentTwoBackground }">
+    </app-component2>  
+    <app-component3 
+        class="component3" [ngStyle]="{ 'width': componentThreeWidth }">
+    </app-component3>  
+</div>

@@ -1,0 +1,23 @@
+.component-container {
+    display: flex;
+    height: 400px;
+}
+
+.component1 {
+    background: red;
+    width: 20%;
+}
+
+.component2 {
+    width: 20%;
+    flex-grow: 1;
+}
+
+.component3 {
+    width: 200px;
+    background: blue;
+}
+
+.component1, .component3 {
+    transition: width .5s ease-in-out;
+}
